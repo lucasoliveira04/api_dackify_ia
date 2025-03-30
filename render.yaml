@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: apiConvertFilesToApkg
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./start.sh
+    autoDeploy: true
