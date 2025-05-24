@@ -19,6 +19,12 @@ HEADERS = {
     "Content-Type": "application/json"
 }
 
+@app.route("/", methods=["GET"])
+def start_api():
+    return {
+        "message": "API START"
+    }
+
 @app.route('/api/generate_quests', methods=['POST'])
 def main():
     data = request.get_json()
